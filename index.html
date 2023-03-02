@@ -18,7 +18,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="/goit-markup-hw-06/index.html" />
+		<link rel="stylesheet" href="/goit-markup-hw-06/css/styles.css" />
 	</head>
 
 	<body>
@@ -70,6 +70,33 @@
 					<div data-modal class="backdrop is-hidden">
 						<div class="modal">
 							<button data-modal-close type="button" class="modal-close">&#10006;</button>
+							<p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
+							<form name="order_form" autocomplete="off">
+								<label>
+									Imię
+									<input type="text" name="name" />
+								</label>
+								<label>
+									Telefon
+									<input type="tel" name="phone" />
+								</label>
+								<label>
+									Email
+									<input type="email" name="email" />
+								</label>
+								<label>
+									Komentarz
+									<textarea name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+								</label>
+								<label>
+									<input type="checkbox" name="privacy-policy" />
+									Oświadczam iż akceptuję
+									<a href="#">Regulamin</a>
+									i
+									<a href="#">Politykę Prywatności.</a>
+								</label>
+								<button type="submit">Wyślij</button>
+							</form>
 						</div>
 					</div>
 				</div>
