@@ -641,7 +641,7 @@ p {
 	display: block;
 	position: absolute;
 	visibility: visible;
-	transform: translateX(-50%) translateY(-50%) scale(0.75);
+	transform: translateX(-50%) translateY(-50%) scale(1.05);
 	opacity: 1;
 }
 .backdrop {
@@ -677,16 +677,44 @@ p {
 label {
 	display: flex;
 	flex-direction: column;
-	padding-left: 36px;
-	padding-right: 46px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 textarea {
 	resize: none;
 }
+
 .form-name {
 	padding-top: 40px;
-	margin-bottom: 12px;
+	margin-bottom: 30px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.17;
+}
+.input-container {
+	display: inline-block;
+	position: relative;
+}
+.input-name {
+	display: flex;
+	margin-bottom: 4px;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	color: var(--secondary-text-color);
+}
+.input-text {
+	width: 448px;
+	height: 40px;
+	padding-left: 42px;
+	border-radius: 4px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.input-icon {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 50%;
+	margin-left: 15px;
 }
