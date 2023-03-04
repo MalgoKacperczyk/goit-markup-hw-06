@@ -475,15 +475,19 @@
 						</li>
 					</ul>
 				</div>
-				<div>
-					<form name="signup_newsletter" autocomplete="off" novalidate>
-						<p>ZAPISZ SIĘ DO NEWSLETTERA</p>
-						<label>
-							<input type="email" name="email" />
-							<button type="submit">Wyślij</button>
-						</label>
-					</form>
-				</div>
+
+				<form class="newsletter-form" name="newsletter-signup" autocomplete="off" novalidate>
+					<p class="newsletter-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
+					<label class="newsletter-label">
+						<input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
+						<button class="newsletter-button" type="submit">
+							Zapisz się
+							<svg class="newsletter-icon">
+								<use href="./images/icons.svg#icon-icon-send"></use>
+							</svg>
+						</button>
+					</label>
+				</form>
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
