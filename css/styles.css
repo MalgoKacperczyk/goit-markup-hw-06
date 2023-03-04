@@ -524,11 +524,11 @@ p {
 	display: flex;
 	align-items: baseline;
 }
-.footer-right {
+.footer-social {
 	justify-content: center;
 	align-items: center;
 }
-.social-footer {
+.social-link {
 	background-color: rgba(255, 255, 255, 0.1);
 	gap: 10px;
 	display: flex;
@@ -541,10 +541,10 @@ p {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-footer:hover {
+.social-link:hover {
 	background-color: var(--accent-color);
 }
-.social-footer:focus {
+.social-link:focus {
 	background-color: var(--accent-color);
 }
 
