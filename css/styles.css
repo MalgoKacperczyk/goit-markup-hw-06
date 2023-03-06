@@ -782,6 +782,22 @@ textarea {
 }
 .checkbox-container {
 	display: inline;
+	position: relative;
+}
+.checkbox-icon {
+	width: 16px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: 38px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.checkbox-input {
+	cursor: pointer;
+}
+.checkbox-input:checked ~ .checkbox-icon {
+	visibility: visible;
 }
 .checkbox-link {
 	font-weight: 400;
@@ -846,8 +862,4 @@ textarea {
 	height: 24px;
 	fill: var(--background-color);
 	margin-left: 24px;
-}
-.checkbox-icon {
-	width: 16px;
-	height: 15px;
 }
